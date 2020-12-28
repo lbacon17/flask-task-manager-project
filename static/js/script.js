@@ -40,3 +40,11 @@ $(document).ready(function(){
         });
     }
 });
+
+taskCompleted();
+function taskCompleted() {
+    $("#completeTask").on("click", function () {
+        let completedTask = { "background-color": "rgba(0, 255, 0, 0.7)" }
+        $(this).parent(".collapsible-header").css(completedTask)
+    });
+};
